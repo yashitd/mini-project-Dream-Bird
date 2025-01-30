@@ -1,0 +1,292 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Tiro+Devanagari+Hindi&display=swap');
+:root{
+    --bacolor:#123c69;
+    --txtc:#555;
+    --ahov:orangered;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+header {
+    background: var(--bacolor);
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar nav ul li {
+    display: inline;
+}
+
+header .navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header .navbar nav ul li a:hover {
+    color: var(--ahov);
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f7f7f7;
+}
+
+#hero h1 {
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+#hero h5 {
+    font-size: 2.2em;
+    color: #555;
+}
+
+.para {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: justify;
+    color: #555;
+    font-size: 22px;
+}
+
+.intro {
+    text-align: center;
+    font-size: 2em;
+    margin: 30px 0 10px;
+    color: var(--bacolor);
+}
+
+.h2 {
+    font-size: 1.8em;
+    color: var(--bacolor);
+}
+
+.section {
+    background: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-four-column {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.counter-numbers1, .counter-numbers2, .counter-numbers3, .counter-numbers4 {
+    font-size: 3.5em;
+    color: var(--ahov);
+    margin: 10px 0;
+}
+
+.program {
+    padding: 40px 20px;
+    text-align: center;
+    font-family: "Baloo 2";
+    font-size: 25px;
+}
+
+.campaign {
+    margin: 10px;
+}
+
+.campaign img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.campaign img:hover {
+    transform: scale(1.05);
+}
+
+.description {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+#partners {
+    background: #f7f7f7;
+    padding: 40px 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+   
+    margin: auto;
+}
+
+.partners {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.partners img {
+    
+    transition: transform 0.3s;
+}
+
+.partners img:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    background: #555;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer div ul p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color:var(--ahov);
+}
+@media (max-width: 768px) {
+    header .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grid-four-column {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .campaign img {
+        max-width: 100%;
+    }
+
+    footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+.camphead{
+    font-family: "Poppins";
+    font-weight: 300;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: auto;
+}
+.campartners{
+    padding: 15px;
+    background-color: rgba(217, 215, 215, 0.985);
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 9px 16px 0px #874F41;
+    width: 350px;
+    height: fit-content;
+
+}
+.campcontainer{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.last{
+    margin-right: 120px;
+}
+.camimg{
+
+    border-radius: 20px;
+}
+.campara{
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 200;
+}
+
+
+/* Keyframes for animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply fadeIn animation to the h1 */
+  #hero h1 {
+    animation: fadeIn 2s ease-in-out;
+    color: #874F41; /* Initial color */
+    font-size: 4em;
+    text-align: center;
+  }
+  
+  /* Apply hover effect */
+  #hero h1:hover {
+    color: orangered;  /* Color changes when hovered */
+    transform: scale(1.1); /* Slight scale on hover */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Apply color effect for span */
+  #hero h1 span {
+    color: orangered;
+    transition: color 0.3s ease;
+  }
+  
+  #hero h1:hover span {
+    color: #874F41; /* Change the color when the text is hovered */
+  }
